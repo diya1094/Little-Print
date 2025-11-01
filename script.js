@@ -1,6 +1,6 @@
 (function() {
   const header = document.querySelector('.site-header');
-  const links = Array.from(document.querySelectorAll('[data-nav]'));
+  const links = Array.from(document.querySelectorAll('.nav-links a'));
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.getElementById('navLinks');
 
@@ -27,7 +27,16 @@
   const setActive = (id) => {
     links.forEach(a => {
       const isActive = a.getAttribute('href') === `#${id}`;
-      a.classList.toggle('active', isActive);
+      if (a.classList.contains('nav-contact-btn')) {
+        // For contact button, add active styling
+        if (isActive) {
+          a.style.background = 'var(--brand-dark)';
+        } else {
+          a.style.background = 'var(--brand)';
+        }
+      } else {
+        a.classList.toggle('active', isActive);
+      }
     });
   };
 

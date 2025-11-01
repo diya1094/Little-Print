@@ -46,11 +46,21 @@ Notes:
 - Replace the social preview image URL (`og:image`) with your branded image for best results.
 - Consider adding a `sitemap.xml` and `robots.txt` in production.
 
+## Adding Your Logo
+
+1. Add your logo image file named `logo.png` to the root directory.
+2. The logo should be a circular design (Tree of Life) with a deep pink/maroon background.
+3. Recommended size: 32x32px or larger (will be scaled automatically).
+4. Supported formats: PNG, SVG, JPG
+5. If the logo file is not found, a fallback circular icon will be displayed.
+
 ## Editing content
 
-- Hero image: update `.hero-media` background in `styles.css`.
-- Gallery images/titles: edit the `<article class="card">` items in `index.html`.
-- Colors and fonts: adjust CSS variables at the top of `styles.css`.
+- Logo: Add `logo.png` to the root directory (see above).
+- Hero section: The hero uses a gradient background. Adjust `.hero-gradient` in `styles.css` if needed.
+- Gallery images: Replace the image URLs in the gallery section of `index.html`.
+- Colors and fonts: Adjust CSS variables at the top of `styles.css`.
+- Contact info: Update email and Instagram link in the contact section of `index.html`.
 
 ## License
 
