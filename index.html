@@ -51,43 +51,16 @@
 
     <main>
       <!-- Hero Section with Centered Card -->
-            <!-- Hero Section with Centered Card -->
-      <section 
-        id="home"
-        class="relative min-h-screen flex items-center justify-center px-4 pt-20"
-        style="background-image: url('hero-background.jpg'); background-size: cover; background-position: center; background-attachment: fixed;"
-        aria-label="Hero"
-      >
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-sage/20"></div>
-        <div class="relative z-10 max-w-6xl mx-auto py-20">
-          <div class="glass rounded-3xl p-8 md:p-16 space-y-8 animate-fade-in">
-            <div class="text-center space-y-6">
-              <h1 class="text-5xl md:text-7xl font-display font-bold text-gradient-primary">
-                Elegant Digital Invitations
-              </h1>
-              <p class="text-xl md:text-3xl text-foreground/90 font-light">
-                Make Every Celebration Unforgettable
-              </p>
-              <p class="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Transform your special moments into timeless memories with beautifully crafted 
-                e-invitations that blend tradition, elegance, and modern design
-              </p>
-            </div>
-            <div class="flex flex-wrap gap-4 justify-center pt-4">
-              <button 
-                type="button"
-                class="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow px-6 py-3 rounded-lg text-lg"
-                onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });"
-              >
-                Explore Designs
-              </button>
-              <button 
-                type="button"
-                class="glass-hover border-primary/30 text-primary bg-background/80 hover:bg-background px-6 py-3 rounded-lg text-lg"
-                onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
-              >
-                Get in Touch
-              </button>
+      <section class="hero" id="home" aria-label="Hero">
+        <div class="hero-gradient"></div>
+        <div class="hero-content-wrapper">
+          <div class="hero-card">
+            <h1 class="hero-title">Elegant Digital Invitations</h1>
+            <p class="hero-subtitle">Make Every Celebration Unforgettable</p>
+            <p class="hero-copy">Transform your special moments into timeless memories with beautifully crafted e‑invitations that blend tradition, elegance, and modern design.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#gallery">Explore Designs</a>
+              <a class="btn secondary" href="#contact">Get in Touch</a>
             </div>
           </div>
         </div>
